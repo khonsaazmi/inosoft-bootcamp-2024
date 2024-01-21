@@ -25,8 +25,9 @@
         
         <div class="buttons">
             <input class="button button-c" type="button" value="C" onclick="clean()">
-            <input class="button operator" type="button" value="()" onclick="insert('()')">
-            <input class="button operator" type="button" value="%" onclick="insert('%')">
+            <input class="button operator" type="button" value="(" onclick="insert('(')">
+            <input class="button operator" type="button" value=")" onclick="insert(')')">
+            
             <input class="button operator" type="button" value="÷" onclick="insert('÷')">
             
             <input class="button" type="button" value="7" onclick="insert(7)">
@@ -44,12 +45,17 @@
             <input class="button" type="button" value="3" onclick="insert(3)">
             <input class="button operator" type="button" value="+" onclick="insert('+')">
             
+            <input class="button" type="button" value="+/-" onclick="insert('(-')">
             <input class="button" type="button" value="0" onclick="insert(0)">
             <input class="button" type="button" value="." onclick="insert('.')">
+            <input class="button operator" type="button" value="%" onclick="insert('%')">
+
+            <!-- <div class="space"></div> -->
+            <div class="space">COSIO<sup>&copy;</sup></div>
             <input class="button button-equal" style="height:106" type="button" value="=" onclick="equal().setSeparator()">
         </div>
     </div>
-    
+    <footer></footer>    
 </script>
     <script src="script.js"></script>
 </body>

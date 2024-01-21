@@ -1,16 +1,15 @@
-function insert(num){
-    document.form.display.value = document.form.display.value+num
+function insert(num) {
+    document.form.display.value = document.form.display.value + num
 }
 
-function clean(){
+function back() {
+    var exp = document.form.display.value;
+    document.form.display.value = exp.substring(0, exp.length - 1);
+}
+
+function clean() {
     document.form.display.value = "";
 }
-
-function back(){
-    var exp = document.form.display.value;
-    document.form.display.value = exp.substring(0,exp.length-1);
-  }
-
 
 function equal() {
     try {
@@ -26,11 +25,11 @@ function equal() {
 
 var icon = document.getElementById("light-mode");
 
-icon.onclick = function(){
+icon.onclick = function () {
     document.body.classList.toggle("light-mode");
-    if(document.body.classList.contains("light-mode")){
+    if (document.body.classList.contains("light-mode")) {
         icon.src = "sun.png";
-    }else{
+    } else {
         icon.src = "moon.png";
     }
 }

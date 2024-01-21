@@ -1,111 +1,135 @@
 body {
-    font-family: "myanmar khyay", sans-serif;
-    background-color: var(--primary-color);
-    display: flex-start;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-}
-
-form{
-    width: 80%;
-}
-input[type="text"] {
-    width: 100%;
-
-    padding: 10px;
-    margin-bottom: 10px;
-    font-size: 27px;
-    border: none;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    border: #c7c7c750 1px solid;
-    text-align: right;
-    margin-top: 80px;
-}
-
-.buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
-    justify-items: center;
-    border-top: rgba(17, 173, 0, 0.929) 1px solid;
-    text-align: center;
-    color: white;
-    padding: 10px;
-}
-
-.button {
-    width: 75px;
-    min-height: 70px;
-    min-height: 70px;
-    height: 75px;
-    padding: 10px;
-    font-size: 27px;
-    background-color: #292828;
-    border: none;
-    border-radius: 50%;
-    color: rgb(255, 255, 255);
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.button:hover {
-    background-color: #c7c7c750;
-}
-
-.button-c {
-    color: red;
-}
-
-
-.operator {
-    color:rgba(17, 173, 0, 0.929);
-}
-
-.button-equal {
-    color: white;
-    background-color:rgba(17, 173, 0, 0.929);
-}
-
-.button-equal:hover {
-    content: "";
-    background-color:rgb(114, 218, 103)
-}
-
-.button-back {
-    width: 20px;
-    padding-bottom: 2px%;
-}
-
-.atas {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    align-content: space-between;
-    justify-content: space-around;
-}
-
-#light-mode {
-    margin-top: 30px;
-    height: 40px;
-    cursor: pointer;
+  font-family: "myanmar khyay", sans-serif;
+  background-color: var(--primary-color);
+  display: flex-start;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 header {
-    display: flex;
-    top: 0;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+#light-mode {
+  margin-top: 30px;
+  height: 40px;
+  cursor: pointer;
 }
 
 :root {
-    --primary-color: #000000;
-    --secondary-color: #d7d1d1;
+  --primary-color: #000000;
+  --secondary-color: #d7d1d1;
 }
 
 .light-mode {
-    --primary-color: #d8d2d2;
-    --secondary-color: #000000;
+  --primary-color: #d8d2d2;
+  --secondary-color: #000000;
+}
+
+.atas {
+  margin-top: 60%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  align-content: space-between;
+  justify-content: space-evenly;
+}
+
+form {
+  width: 80%;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 27px;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-align: right;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  justify-items: center;
+  border-top: rgba(17, 173, 0, 0.929) 1px solid;
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
+
+.button {
+  width: 75px;
+  min-height: 70px;
+  min-height: 70px;
+  height: 75px;
+  padding: 10px;
+  font-size: 27px;
+  background-color: #292828;
+  border: none;
+  border-radius: 50%;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #c7c7c750;
+}
+
+.button-c {
+  color: red;
+}
+
+.operator {
+  color: rgba(17, 173, 0, 0.929);
+}
+
+.button-equal {
+  color: white;
+  background-color: rgba(17, 173, 0, 0.929);
+  grid-column: span 2;
+  margin-top: 5%;
+  width: 87%;
+  border-radius: 40px;
+}
+
+.button-equal:hover {
+  content: "";
+  background-color: rgb(114, 218, 103);
+}
+
+.button-back {
+  width: 30px;
+  padding-bottom: 80%;
+}
+
+.space {
+  background-color: rgba(17, 173, 0, 0);
+  grid-column: span 2;
+  margin-top: 5%;
+  width: 80%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  border: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--secondary-color);
+  font-weight: 600;
+  font-size: 20px;
+}
+
+footer {
+  height: 5%;
 }
