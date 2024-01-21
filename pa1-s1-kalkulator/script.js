@@ -33,9 +33,9 @@ var icon = document.getElementById("light-mode");
 icon.onclick = function () {
     document.body.classList.toggle("light-mode");
     if (document.body.classList.contains("light-mode")) {
-        icon.src = "sun.png";
+        icon.src = "images/sun.png";
     } else {
-        icon.src = "moon.png";
+        icon.src = "images/moon.png";
     }
 }
 
