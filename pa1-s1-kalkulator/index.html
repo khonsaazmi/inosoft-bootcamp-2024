@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalkulator</title>
+    <meta author="Khonsa Azmi Afifah" description="Assignments for Inosoft Bootcamp">
+    <meta keyword="Kalkulator, Calculator, Kalkulator Sederhana, Basic Calculator">
+    <title>Kalkulator Sederhana</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="kalkulator">
         <header>
-            <div class="mode">
-                <img src="sun.png" alt="light-mode" id="light-mode">
-                <!-- <img src="moon.png" alt="night-mode" class="night-mode">     -->
+            <div> <!-- Switch Mode -->
+                <img src="moon.png" alt="light-mode" id="light-mode">
             </div>
         </header>
         <div class="atas">
@@ -50,8 +51,7 @@
             <input class="button" type="button" value="." onclick="insert('.')">
             <input class="button operator" type="button" value="%" onclick="insert('%')">
 
-            <!-- <div class="space"></div> -->
-            <div class="space">COSIO<sup>&copy;</sup></div>
+            <div class="space">COSIO<sup>&copy;</sup></div> <!-- Company name and Copyright -->
             <input class="button button-equal" style="height:106" type="button" value="=" onclick="equal().setSeparator()">
         </div>
     </div>
