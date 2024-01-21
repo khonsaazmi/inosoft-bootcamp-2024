@@ -133,3 +133,7 @@ input[type="text"] {
 footer {
   height: 5%;
 }
+
+sup {
+  font-size: 10px;
+}
