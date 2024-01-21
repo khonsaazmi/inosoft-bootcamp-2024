@@ -57,6 +57,11 @@ input[type="text"] {
   text-align: right;
 }
 
+.button-back {
+  width: 30px;
+  padding-bottom: 80%;
+}
+
 .buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -107,11 +112,6 @@ input[type="text"] {
 .button-equal:hover {
   content: "";
   background-color: rgb(114, 218, 103);
-}
-
-.button-back {
-  width: 30px;
-  padding-bottom: 80%;
 }
 
 .space {
