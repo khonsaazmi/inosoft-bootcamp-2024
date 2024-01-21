@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kalkulator">
+        <header>
+            <div class="mode">
+                <img src="sun.png" alt="light-mode" id="light-mode">
+                <!-- <img src="moon.png" alt="night-mode" class="night-mode">     -->
+            </div>
+        </header>
+        <div class="atas">
+            <form name="form">
+                <input type="text" id="display" readonly>
+            </form>
+            <div>
+                <img src="back.png" onclick="back()" alt="Back" class="button-back">
+            </div>
+        </div>
+        
+        <div class="buttons">
+            <input class="button button-c" type="button" value="C" onclick="clean()">
+            <input class="button operator" type="button" value="()" onclick="insert('()')">
+            <input class="button operator" type="button" value="%" onclick="insert('%')">
+            <input class="button operator" type="button" value="÷" onclick="insert('÷')">
+            
+            <input class="button" type="button" value="7" onclick="insert(7)">
+            <input class="button" type="button" value="8" onclick="insert(8)">
+            <input class="button" type="button" value="9" onclick="insert(9)">
+            <input class="button operator" type="button" value="x" onclick="insert('x')">
+
+            <input class="button" type="button" value="4" onclick="insert(4)">
+            <input class="button" type="button" value="5" onclick="insert(5)">
+            <input class="button" type="button" value="6" onclick="insert(6)">
+            <input class="button operator" type="button" value="-" onclick="insert('-')">
+
+            <input class="button" type="button" value="1" onclick="insert(1)">
+            <input class="button" type="button" value="2" onclick="insert(2)">
+            <input class="button" type="button" value="3" onclick="insert(3)">
+            <input class="button operator" type="button" value="+" onclick="insert('+')">
+            
+            <input class="button" type="button" value="0" onclick="insert(0)">
+            <input class="button" type="button" value="." onclick="insert('.')">
+            <input class="button button-equal" style="height:106" type="button" value="=" onclick="equal().setSeparator()">
+        </div>
+    </div>
+    
+</script>
+    <script src="script.js"></script>
+</body>
+</html>
+
